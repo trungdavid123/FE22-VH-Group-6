@@ -9,5 +9,5 @@ A web application to show a weather forecast using weather API
 4. In the folder "pages" corresponding to each person's work
 5. Home page is the main index.html 
 6. Writing the command "git status" to check the current branch 
-8. If it's the "main" branch, switch to the "development" by using the command "git checkout development" 
+8. If it's the "main" branch, switch to the "development" branch by using the command "git checkout development" 
 9. Open Live Serve and enjoy coding :wink:
