@@ -12,4 +12,4 @@ A web application to show a weather forecast using weather API
 8. If it's the "main" branch, switch to the "development" branch by using the command "git checkout development" 
 9. Open Live Serve and enjoy coding :wink:
 
-### Our wikipedia: https://busy-newt-d88.notion.site/Weather-Website-Application-bb1e4c0677b542669a58e25262b3d848 
+Our wikipedia: https://busy-newt-d88.notion.site/Weather-Website-Application-bb1e4c0677b542669a58e25262b3d848 
