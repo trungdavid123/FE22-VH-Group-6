@@ -103,7 +103,7 @@ main{
 }
 h1{
 
-    color:rgb(47, 150, 163);
+    color:rgb(108, 172, 218);
     padding-right: 2rem;
 }
 
@@ -111,7 +111,7 @@ footer {
     /* position: relative; */
     width: 100%;
     /* background: #ddd; */
-    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    background: linear-gradient(rgb(108, 172, 218), rgb(48, 62, 143));
     min-height: 100px;
     padding: 50px;
     display: flex;
