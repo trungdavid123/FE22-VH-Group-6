@@ -21,20 +21,9 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 3rem;
-    padding-top: 1rem;
+    padding: 1rem 0rem;
+    margin: 0rem 3rem;
 
-}
-
-.header {
-    height:45vh;
-    width: 100%;
-    background-image: url(../../assets/weather.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    text-align: center;
 }
 
 .navbar .link-list {
@@ -57,6 +46,18 @@ ul {
     font-size: 1.2rem;
     color: #fff;
 }
+
+.header {
+    height: 45vh;
+    width: 100%;
+    background-image: url(../../assets/weather.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+}
+
 
 .contact-us {
     background-color: #007AFF;
@@ -82,16 +83,20 @@ ul {
     color: #007AFF;
 }
 
+.menu-hamburgare {
+    display: none;
+}
+
+
 h1 {
 
-    color:#fff;
+    color: #fff;
     font-size: 1.8rem;
-    padding-right: 2rem;
     margin-top: 4rem;
 }
 
 footer {
-   
+
     width: 100%;
     background: linear-gradient(rgb(108, 172, 218), rgb(48, 62, 143));
     padding: 1rem;
@@ -143,35 +148,61 @@ footer p {
 }
 
 @media screen and (max-width: 574px) {
-   footer {
+
+    .header {
+        height: 45vh;
+        width: 100%;
+        background-image: url(../../assets/weather.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer {
         flex-direction: column;
         margin: auto;
         height: 7rem;
     }
-  
+
     /* .message{
         font-size: small;
         flex-direction: column;
     } */
-    .rocket{
+    .rocket {
         height: 1.3rem;
     }
-    
+
+    .menu-hamburgare {
+        display: inline-block !important;
+    }
+
+    .menu-hamburgare img {
+        position: absolute;
+        top: 14px !important;
+        width: 40px !important;
+        right: 0;
+        display: inline-block !important;
+    }
+
 }
 
-.message{
+.message {
     display: flex;
 }
-.input-item{
+
+.input-item {
     width: 100%;
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     justify-content: center;
     justify-items: center;
 
 }
+
 .contact_list {
     width: 30%;
     display: flex;
@@ -212,4 +243,76 @@ footer p {
     font-size: .7rem;
     text-align: center;
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact_list {
+        width: 80%;
+    }
+
+
+    .img-container img {
+        width: 110%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .contact-us {
+        display: none !important;
+    }
+
+
+
+    .link-list {
+        display: none !important;
+        margin: auto;
+    }
+
+    .link-list.show {
+        display: flex !important;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 15px !important;
+
+    }
+
+    .link-list .link-item a {
+        transition: .3s all;
+        font-weight: 450;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .copyright {
+        display: block !important;
+    }
+
+    .navbar {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-hamburgare {
+        display: inline-block !important;
+    }
+
+    .menu-hamburgare img {
+        position: absolute;
+        top: 14px !important;
+        width: 40px !important;
+        right: 0;
+        display: inline-block !important;
+    }
 }
