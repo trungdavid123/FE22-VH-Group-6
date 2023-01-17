@@ -28,6 +28,7 @@ ul {
     display: flex;
     gap: 3rem;
     text-transform: uppercase;
+    margin: auto !important;
 }
 
 .link-list .link-item.active a {

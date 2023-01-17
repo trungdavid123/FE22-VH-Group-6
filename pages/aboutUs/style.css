@@ -85,6 +85,10 @@ ul {
     color: #007AFF;
 }
 
+.menu-hamburgare{
+    display: none;
+}
+
 .about-del-top{
     position: relative;
     display: flex;
@@ -179,5 +183,46 @@ footer p{
     .about-del-top img{
         height: 20rem;
         width: 25rem;
+    }
+    .contact-us {
+        display: none !important;
+    }
+
+    .link-list {
+        display: none !important;
+    }
+
+    .link-list.show {
+        display: flex !important;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 15px !important;
+        margin: auto;
+    }
+
+    h1{
+        margin-top: 2rem;
+    }
+
+    .copyright {
+        display: block !important;
+    }
+
+    .navbar {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-hamburgare {
+        display: inline-block !important;
+    }
+
+    .menu-hamburgare img {
+        position: absolute;
+        top: 0;
+        width: 15%;
+        right: 0;
+        display: inline-block !important;
     }
 }
