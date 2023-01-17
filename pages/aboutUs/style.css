@@ -22,17 +22,18 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 0 3rem;
-    padding-top: 1rem;
-    
+    padding-top: 1rem; 
 }
 
 .header{
-    height: 30vh;
+    height: 45vh;
     width: 100%;
     background-image: url(../../assets/weather.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    justify-content: center;
+    text-align: center;
 }
 
 .navbar .link-list {
@@ -84,41 +85,47 @@ ul {
     color: #007AFF;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-} */
-
-main{
+.about-del-top{
+    position: relative;
     display: flex;
     justify-content: center;
     justify-items: center;
-    margin: 30px;
-    gap: 1rem;
-
+    margin-top: 5rem;
+    margin-bottom: 12rem;
 }
-h1{
 
-    color:rgb(108, 172, 218);
+.about-del{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 1.875rem;
+    gap: 1rem;
+}
+
+.about-del-top img {
+    position: absolute;
+    width: 35%;
+    top: -12.5rem;
+    border-radius: 14px;
+}
+
+h1{
+    color:#fff;
+    font-size: 1.8rem;
     padding-right: 2rem;
+    margin-top: 4rem;
 }
 
 footer {
-    /* position: relative; */
     width: 100%;
-    /* background: #ddd; */
     background: linear-gradient(rgb(108, 172, 218), rgb(48, 62, 143));
-    min-height: 100px;
-    padding: 50px;
+    padding: 1rem;
+    margin: auto;
     display: flex;
     justify-content: center;
     justify-items: center;
-    padding-bottom: 100%;
-
+    height: 10rem;
 }
 
 footer .social-icon {
@@ -137,15 +144,16 @@ footer .social-icon li {
 footer .social-icon li a {
     font-size: 2rem;
     color: #f6f6f6;
-    margin: 0 10px;
+    margin: 0 0.625rem;
     display: inline-block;
     transition: 0, 5s;
 }
 
 footer .social-icon li a:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.625);
     color: rgb(192, 12, 12);
 }
+
 .copyright{
     display: flex;
     text-align: center;
@@ -153,22 +161,23 @@ footer .social-icon li a:hover {
 }
 
 footer p{
-    font-size: 16px;
-font-weight: 500;
-line-height: 24px;
+    font-size: .7rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin: auto;
 }
-/* #51545c
-background: #f6f6f6
-
-border: 1px solid #e0dddd;
-
-span color #003366 */
 
 @media screen and (max-width: 574px) {
-    main {
+     .about-del{
         flex-direction: column;
     }
     footer {
         flex-direction: column;
+        margin: auto;
+        height: 7rem;
+    }
+    .about-del-top img{
+        height: 20rem;
+        width: 25rem;
     }
 }
