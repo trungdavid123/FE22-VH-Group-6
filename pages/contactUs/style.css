@@ -21,18 +21,9 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 3rem;
-    padding-top: 1rem;
+    padding: 1rem 0rem;
+    margin: 0rem 3rem;
 
-}
-
-.header {
-    height: 30vh;
-    width: 100%;
-    background-image: url(../../assets/weather.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .navbar .link-list {
@@ -55,6 +46,18 @@ ul {
     font-size: 1.2rem;
     color: #fff;
 }
+
+.header {
+    height: 45vh;
+    width: 100%;
+    background-image: url(../../assets/weather.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+}
+
 
 .contact-us {
     background-color: #007AFF;
@@ -80,38 +83,28 @@ ul {
     color: #007AFF;
 }
 
-.active {
-    color: #007AFF;
+.menu-hamburgare {
+    display: none;
 }
 
-
-main {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin: 30px;
-    gap: 1rem;
-
-}
 
 h1 {
 
-    color: rgb(108, 172, 218);
-    padding-right: 2rem;
-
+    color: #fff;
+    font-size: 1.8rem;
+    margin-top: 4rem;
 }
 
 footer {
-    /* position: relative; */
+
     width: 100%;
-    /* background: #ddd; */
     background: linear-gradient(rgb(108, 172, 218), rgb(48, 62, 143));
-    min-height: 100px;
-    padding: 50px;
+    padding: 1rem;
     display: flex;
+    margin: auto;
     justify-content: center;
     justify-items: center;
-    padding-bottom: 100%;
+    height: 10rem;
 
 }
 
@@ -131,13 +124,13 @@ footer .social-icon li {
 footer .social-icon li a {
     font-size: 2rem;
     color: #f6f6f6;
-    margin: 0 10px;
+    margin: 0 0.625rem;
     display: inline-block;
     transition: 0, 5s;
 }
 
 footer .social-icon li a:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.625);
     color: rgb(192, 12, 12);
 }
 
@@ -148,37 +141,68 @@ footer .social-icon li a:hover {
 }
 
 footer p {
-    font-size: 16px;
+    font-size: .7rem;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5rem;
+    margin: auto;
 }
 
-/* #51545c
-background: #f6f6f6
-
-border: 1px solid #e0dddd;
-
-span color #003366 */
-
 @media screen and (max-width: 574px) {
-    main {
-        flex-direction: column;
+
+    .header {
+        height: 45vh;
+        width: 100%;
+        background-image: url(../../assets/weather.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        text-align: center;
     }
 
     footer {
         flex-direction: column;
+        margin: auto;
+        height: 7rem;
     }
+
+    /* .message{
+        font-size: small;
+        flex-direction: column;
+    } */
+    .rocket {
+        height: 1.3rem;
+    }
+
+    .menu-hamburgare {
+        display: inline-block !important;
+    }
+
+    .menu-hamburgare img {
+        position: absolute;
+        top: 14px !important;
+        width: 40px !important;
+        right: 0;
+        display: inline-block !important;
+    }
+
 }
 
+.message {
+    display: flex;
+}
 
-.input-item{
+.input-item {
     width: 100%;
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     justify-content: center;
+    justify-items: center;
+
 }
+
 .contact_list {
     width: 30%;
     display: flex;
@@ -214,4 +238,81 @@ span color #003366 */
     transition: .3s all;
     background-color: #007AFF;
     align-self: flex-start;
+
+    padding: 0.3rem 0.3rem;
+    font-size: .7rem;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact_list {
+        width: 80%;
+    }
+
+
+    .img-container img {
+        width: 110%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .contact-us {
+        display: none !important;
+    }
+
+
+
+    .link-list {
+        display: none !important;
+        margin: auto;
+    }
+
+    .link-list.show {
+        display: flex !important;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 15px !important;
+
+    }
+
+    .link-list .link-item a {
+        transition: .3s all;
+        font-weight: 450;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .copyright {
+        display: block !important;
+    }
+
+    .navbar {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-hamburgare {
+        display: inline-block !important;
+    }
+
+    .menu-hamburgare img {
+        position: absolute;
+        top: 14px !important;
+        width: 40px !important;
+        right: 0;
+        display: inline-block !important;
+    }
 }
