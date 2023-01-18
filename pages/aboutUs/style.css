@@ -66,7 +66,7 @@ ul {
     border: 1px solid #007AFF;
 }
 
-.contact-us p {
+.contact-us a {
     color: #fff;
     font-weight: 400;
     font-size: 1.2rem;
@@ -171,22 +171,7 @@ footer p{
     margin: auto;
 }
 
-@media screen and (max-width: 574px) {
-     .about-del{
-        flex-direction: column;
-    }
-    footer {
-        flex-direction: column;
-        margin: auto;
-        height: 7rem;
-    }
-    .about-del-top img{
-        height: 20rem;
-        width: 25rem;
-    }
-    .contact-us {
-        display: none !important;
-    }
+@media screen and (max-width: 768px) {
 
     .link-list {
         display: none !important;
@@ -200,12 +185,12 @@ footer p{
         margin: auto;
     }
 
-    h1{
-        margin-top: 2rem;
+    .contact-us {
+        display: none !important;
     }
 
-    .copyright {
-        display: block !important;
+    h1{
+        margin-top: 2rem;
     }
 
     .navbar {
@@ -216,6 +201,7 @@ footer p{
 
     .menu-hamburgare {
         display: inline-block !important;
+        
     }
 
     .menu-hamburgare img {
@@ -224,5 +210,24 @@ footer p{
         width: 15%;
         right: 0;
         display: inline-block !important;
+    }
+    
+    .about-del-top img{
+        height: 20rem;
+        width: 25rem;
+    }
+
+    .about-del{
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        margin: auto;
+        height: 7rem;
+    }
+
+    .copyright {
+        display: block !important;
     }
 }
