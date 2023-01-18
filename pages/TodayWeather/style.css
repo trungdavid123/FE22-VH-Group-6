@@ -73,6 +73,9 @@ body{
     gap: 1rem;
     flex-wrap:wrap;
 }
+.city{
+    font-size: 60px;
+}
 .cards{
     display: flex;
     justify-content: space-around;
