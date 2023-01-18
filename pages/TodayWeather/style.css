@@ -72,6 +72,7 @@ body{
     margin-bottom: 5%;
     gap: 1rem;
     flex-wrap:wrap;
+    background-color: transparent;
 }
 .city{
     font-size: 60px;
@@ -86,7 +87,12 @@ body{
     margin-right: 8%;
 }
 .wather-forecast-item{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
     width: 9%;
+    height: 230px;
     background-color: #0852a1;
     border-radius: 10%;
     margin-bottom: 15%;
