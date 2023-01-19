@@ -218,7 +218,7 @@ footer p {
 .contact {
     padding-left: 1rem;
     width: 100%;
-    height: 2.5rem;
+    padding: .8rem 1rem;
     border: 0.15rem solid rgb(191, 187, 187);
     border-radius: 10px;
     background-color: rgb(234, 231, 231);
@@ -238,9 +238,8 @@ footer p {
     transition: .3s all;
     background-color: #007AFF;
     align-self: flex-start;
-
-    padding: 0.3rem 0.3rem;
-    font-size: .7rem;
+    padding: 0.8rem 0.3rem;
+    font-size: .8rem;
     text-align: center;
     color: #fff;
 }
@@ -321,5 +320,9 @@ footer p {
         width: 40px !important;
         right: 0;
         display: inline-block !important;
+    }
+
+    .header {
+        padding-top: 1rem;
     }
 }

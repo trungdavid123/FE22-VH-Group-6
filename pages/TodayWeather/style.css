@@ -22,10 +22,10 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 0 3rem;
-    padding-top: 1rem; 
+    padding-top: 1rem;
 }
 
-.header{
+.header {
     height: 45vh;
     width: 100%;
     background-image: url(../../assets/weather.jpg);
@@ -56,14 +56,15 @@ ul {
     font-size: 1.2rem;
     color: #fff;
 }
-body{
-    
-    background: rgb(45, 63, 133); 
+
+body {
+
+    background: rgb(45, 63, 133);
     color: white;
 }
 
 
-.Board-top{
+.Board-top {
     display: flex;
     flex-direction: column;
     color: white;
@@ -71,13 +72,15 @@ body{
     margin-right: 10%;
     margin-bottom: 5%;
     gap: 1rem;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     background-color: transparent;
 }
-.city{
+
+.city {
     font-size: 60px;
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
@@ -86,11 +89,12 @@ body{
     margin-left: 8%;
     margin-right: 8%;
 }
-.wather-forecast-item{
+
+.wather-forecast-item {
     display: flex;
     flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 9%;
     height: 230px;
     background-color: #0852a1;
@@ -126,45 +130,117 @@ body{
     color: #007AFF;
 }
 
-.active{
+.active {
     color: #007AFF;
 }
 
-.menu-hamburgare{
+.menu-hamburgare {
     display: none;
 }
 
-.about-del-top{
-    position: relative;
+/* ------------ MAIN --------------- */
+
+.wrapper {
+    padding: 0 2.2rem;
+}
+
+.weather-board-list {
+    margin-top: 1rem;
+}
+
+.weather-board {
     display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 5rem;
-    margin-bottom: 12rem;
+    flex-direction: column;
 }
 
-.about-del{
-    position: relative;
+
+.board-title {
+    margin-top: 1rem;
+}
+
+
+.board-title h3 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.board-title span {
+    color: #B7CBFF;
+}
+
+.board-main {
     display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin: 1.875rem;
-    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.about-del-top img {
-    position: absolute;
-    width: 35%;
-    top: -12.5rem;
-    border-radius: 14px;
+.weather-img img {
+    width: 14rem;
+    margin-left: -3rem;
 }
 
-h1{
-    color:#fff;
-    font-size: 1.8rem;
-    padding-right: 2rem;
-    margin-top: 4rem;
+.temperature {
+    margin-bottom: 1.2rem;
+
 }
+
+.temperature .temperature-desc {
+    text-transform: capitalize;
+
+}
+
+.temperature h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.temperature span {
+    color: #B7CBFF;
+    margin-left: -1rem;
+}
+
+.weather-detail-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    row-gap: 2rem;
+    margin-bottom: 4rem;
+
+}
+
+.weather-detail-item {
+    font-size: 1.4rem;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.weather-detail-item span {
+    font-size: 1.2rem;
+    color: #B7CBFF;
+}
+
+@media screen and (min-width: 574px) {
+    .weather-board {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .weather-detail-box {
+        margin: 0;
+    }
+
+
+}
+
+
+/* ------------ END MAIN --------------- */
+
+
 
 footer {
     width: 100%;
@@ -203,13 +279,13 @@ footer .social-icon li a:hover {
     color: rgb(192, 12, 12);
 }
 
-.copyright{
+.copyright {
     display: flex;
     text-align: center;
     align-items: center;
 }
 
-footer p{
+footer p {
     font-size: .7rem;
     font-weight: 500;
     line-height: 1.5rem;
@@ -217,20 +293,31 @@ footer p{
 }
 
 @media screen and (max-width: 574px) {
-     .about-del{
+    .about-del {
         flex-direction: column;
     }
+
+    .contact-us {
+        display: none;
+        margin: 1rem auto;
+    }
+
+    .contact-us.show {
+        display: block;
+    }
+
+
     footer {
         flex-direction: column;
         margin: auto;
         height: 7rem;
+        margin-top: 2rem !important;
+
     }
-    .about-del-top img{
+
+    .about-del-top img {
         height: 20rem;
         width: 25rem;
-    }
-    .contact-us {
-        display: none !important;
     }
 
     .link-list {
@@ -240,12 +327,12 @@ footer p{
     .link-list.show {
         display: flex !important;
         flex-direction: column;
-        margin-top: 2rem;
+        margin-top: 2rem !important;
         gap: 15px !important;
         margin: auto;
     }
 
-    h1{
+    h1 {
         margin-top: 2rem;
     }
 
@@ -265,8 +352,8 @@ footer p{
 
     .menu-hamburgare img {
         position: absolute;
-        top: 0;
-        width: 15%;
+        top: 13px;
+        width: 40px;
         right: 0;
         display: inline-block !important;
     }
