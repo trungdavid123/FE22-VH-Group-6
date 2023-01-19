@@ -10,6 +10,10 @@ let cities = [
         long: "13.0038" // Malmö
     },
     {
+        lat: "57.708870",
+        long: "11.974560" // Göteborg
+    },
+    {
         lat: "67.855800", // Kiruna
         long: "20.225282"
     },
