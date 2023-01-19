@@ -41,7 +41,7 @@ function getWeather() {
                     <div class="weather-board">
                         <div class="left-board">
                             <div class="board-title">
-                                <h3>${data.name}</h3>
+                                <h3>${data.id == 2692969 ? "Malmo" : data.name}</h3>
                                 <span class="subtitle">${date.toLocaleDateString('en-GB', { weekday: "long", month: "long", day: "numeric" })}</span>
                             </div>
                             <div class="board-main">
