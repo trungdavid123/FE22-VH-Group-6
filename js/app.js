@@ -6,19 +6,23 @@ const weatherBoardList = document.querySelector('.weather-board-list');
 
 let cities = [
     {
-        lat: "59.3294",
+        lat: "55.6050",
+        long: "13.0038" // Malmö
+    },
+    {
+        lat: "67.855800", // Kiruna
+        long: "20.225282"
+    },
+    {
+        lat: "59.3294", // Helsingborg
         long: "18.0686"
     },
     {
-        lat: "56.046467",
+        lat: "56.046467", // Malmö
         long: "12.694512"
     },
     {
-        lat: "57.7089",
-        long: "11.9746"
-    },
-    {
-        lat: "56.161224",
+        lat: "56.161224", // Karlskrona
         long: "15.586900"
     }
 ];
