@@ -57,11 +57,17 @@ ul {
     color: #fff;
 }
 
-body {
-
+html {
     background: rgb(45, 63, 133);
     color: white;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #333;
+    }
+}
+
 
 
 .Board-top {

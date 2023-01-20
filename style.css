@@ -250,3 +250,19 @@ footer p {
     font-weight: 500;
     line-height: 24px;
 }
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background: dark;
+    }
+
+    main {
+        background: dark;
+        color: white;
+    }
+
+    h1 {
+        color: #fff;
+    }
+}

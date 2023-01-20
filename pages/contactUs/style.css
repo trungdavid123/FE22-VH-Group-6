@@ -15,6 +15,18 @@ ul {
     list-style: none;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #333;
+    }
+
+    .input-item input,
+    textarea {
+        background: #fff !important;
+    }
+}
+
+
 /* HEADER NAVBAR */
 
 .navbar {
