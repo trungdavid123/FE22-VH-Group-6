@@ -7,7 +7,8 @@ const weatherBoardList = document.querySelector('.weather-board-list');
 let cities = [
     {
         lat: "55.6050",
-        long: "13.0038" // Malmö
+        long: "13.0038", // Malmö
+        nameCity: "Malmo"
     },
     {
         lat: "57.708870",
@@ -41,7 +42,7 @@ function getWeather() {
                     <div class="weather-board">
                         <div class="left-board">
                             <div class="board-title">
-                                <h3>${data.id == 2692969 ? "Malmo" : data.name}</h3>
+                                <h3>${city.nameCity ? city.nameCity : data.name}</h3>
                                 <span class="subtitle">${date.toLocaleDateString('en-GB', { weekday: "long", month: "long", day: "numeric" })}</span>
                             </div>
                             <div class="board-main">
