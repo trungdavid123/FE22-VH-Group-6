@@ -22,10 +22,10 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 0 3rem;
-    padding-top: 1rem; 
+    padding-top: 1rem;
 }
 
-.header{
+.header {
     height: 45vh;
     width: 100%;
     background-image: url(../../assets/weather.jpg);
@@ -66,7 +66,7 @@ ul {
     border: 1px solid #007AFF;
 }
 
-.contact-us p {
+.contact-us a {
     color: #fff;
     font-weight: 400;
     font-size: 1.2rem;
@@ -81,15 +81,15 @@ ul {
     color: #007AFF;
 }
 
-.active{
+.active {
     color: #007AFF;
 }
 
-.menu-hamburgare{
+.menu-hamburgare {
     display: none;
 }
 
-.about-del-top{
+.about-del-top {
     position: relative;
     display: flex;
     justify-content: center;
@@ -98,7 +98,7 @@ ul {
     margin-bottom: 12rem;
 }
 
-.about-del{
+.about-del {
     position: relative;
     display: flex;
     justify-content: center;
@@ -109,13 +109,13 @@ ul {
 
 .about-del-top img {
     position: absolute;
-    width: 35%;
+    width: 30rem;
     top: -12.5rem;
     border-radius: 14px;
 }
 
-h1{
-    color:#fff;
+h1 {
+    color: #fff;
     font-size: 1.8rem;
     padding-right: 2rem;
     margin-top: 4rem;
@@ -158,55 +158,59 @@ footer .social-icon li a:hover {
     color: rgb(192, 12, 12);
 }
 
-.copyright{
+.copyright {
     display: flex;
     text-align: center;
     align-items: center;
 }
 
-footer p{
+footer p {
     font-size: .7rem;
     font-weight: 500;
     line-height: 1.5rem;
     margin: auto;
 }
 
-@media screen and (max-width: 574px) {
-     .about-del{
-        flex-direction: column;
-    }
-    footer {
-        flex-direction: column;
-        margin: auto;
-        height: 7rem;
-    }
-    .about-del-top img{
-        height: 20rem;
-        width: 25rem;
-    }
-    .contact-us {
-        display: none !important;
+@media screen and (max-width: 768px) {
+
+    .header {
+        height: 35vh;
     }
 
     .link-list {
         display: none !important;
     }
 
+    .header.show {
+        height: 60vh;
+    }
+
     .link-list.show {
         display: flex !important;
         flex-direction: column;
-        margin-top: 2rem;
+        margin-top: 2rem !important;
         gap: 15px !important;
         margin: auto;
     }
 
-    h1{
-        margin-top: 2rem;
+    .contact-us {
+        display: none;
+        margin: 2rem auto;
     }
 
-    .copyright {
-        display: block !important;
+    .contact-us.show {
+        display: block;
     }
+
+    h1 {
+        margin-top: 2rem;
+        padding-right: 0;
+    }
+
+    .header.show h1 {
+        margin-top: 0;
+    }
+
 
     .navbar {
         position: relative;
@@ -220,9 +224,48 @@ footer p{
 
     .menu-hamburgare img {
         position: absolute;
-        top: 0;
-        width: 15%;
+        top: 14px;
+        width: 44px;
         right: 0;
         display: inline-block !important;
+    }
+
+    .about-del-top {
+        margin-bottom: 3rem;
+    }
+
+    .about-del-top img {
+        width: 70%;
+    }
+
+    .about-del {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        margin: auto;
+        height: 7rem;
+    }
+
+    .copyright {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 510px) and (max-width: 769px) {
+    .about-del-top {
+        margin-bottom: 10rem;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 390px) {
+    .header.show {
+        height: 70vh;
+    }
+
+    .about-del-top img {
+        top: -9.5rem;
     }
 }
