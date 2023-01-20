@@ -254,7 +254,7 @@ footer p {
 @media (prefers-color-scheme: dark) {
 
     body {
-        background: dark;
+        background: #272526;
     }
 
     main {
@@ -262,7 +262,13 @@ footer p {
         color: white;
     }
 
-    h1 {
+
+    footer {
+        border-top: 1px solid;
+        background: rgb(37, 36, 40) !important;
         color: #fff;
     }
+
+
+
 }

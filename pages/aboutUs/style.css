@@ -16,9 +16,27 @@ ul {
 }
 
 @media (prefers-color-scheme: dark) {
+
+    .header {
+        background-image: url(../../assets/weather-dark.jpeg) !important;
+    }
+
     body {
         background: #333;
     }
+
+    p {
+        color: #fff;
+    }
+
+
+    footer {
+        background: rgb(37, 36, 40) !important;
+        color: #fff;
+        border-top: 1px solid;
+
+    }
+
 }
 
 

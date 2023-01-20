@@ -20,6 +20,22 @@ ul {
         background: #333;
     }
 
+    h2 {
+        color: #007AFF;
+    }
+
+
+    .header {
+        background-image: url(../../assets/weather-dark.jpeg) !important;
+    }
+
+    footer {
+        background: rgb(37, 36, 40) !important;
+        color: #fff;
+        border-top: 1px solid;
+
+    }
+
     .input-item input,
     textarea {
         background: #fff !important;

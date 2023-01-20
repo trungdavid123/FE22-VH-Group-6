@@ -57,7 +57,7 @@ ul {
     color: #fff;
 }
 
-html {
+body {
     background: rgb(45, 63, 133);
     color: white;
 }
@@ -66,6 +66,16 @@ html {
     body {
         background: #333;
     }
+
+    .header {
+        background-image: url(../../assets/weather-dark.jpeg);
+    }
+
+    footer {
+        background: rgb(37, 36, 40) !important;
+        color: #fff;
+    }
+
 }
 
 
